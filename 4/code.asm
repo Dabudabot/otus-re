@@ -209,9 +209,8 @@ INPUT_CHAR:
     cmp al, 66h ; if less or equal f
     jle HEX2
 ERROR:
-    lea dx, se
-    mov ah, 9
-    int 21h        ; fix
+    lea si, se
+    call OUTPUT
     jmp EXIT
 DECIMAL:
     sub al, 30h
