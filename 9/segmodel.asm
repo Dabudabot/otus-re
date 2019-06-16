@@ -81,6 +81,12 @@ GDT:
         dw 0x8000   ;low
         dw 0x920b
         dw 0x0040
+        
+        ;stack - descriptor 4, selector 4<<3 = 0x20
+        dw 0xffff
+        dw 0x0000
+        dw 0x9620
+        dw 0x0040
 
 GDTR:
         dw (GDTR-CURRENT_OFFSET - GDT - 1)
@@ -93,11 +99,12 @@ pm_Main:
         mov ax, 0x10
         mov ds, ax
         mov fs, ax
+        mov ax, 0x20
         mov ss, ax
         mov esp, -1
         mov ax, 18h
         mov gs, ax
-
+xchg bx, bx
 push 0x11223344
 pop ebx
 
