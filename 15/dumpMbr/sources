@@ -1,0 +1,14 @@
+TARGETNAME			= dumpmbr
+TARGETTYPE			= PROGRAM
+UMTYPE				= nt
+BUFFER_OVERFLOW_CHECKS 		= 0
+MINWIN_SDK_LIB_PATH		= $(SDK_LIB_PATH)
+SOURCES 			= dumpmbr.c
+
+INCLUDES 			= $(DDK_INC_PATH); \
+				  C:\WinDDK\7600.16385.1\MyNativeApps\ndk;
+
+TARGETLIBS 			= $(DDK_LIB_PATH)\ntdll.lib	\
+				  $(DDK_LIB_PATH)\nt.lib
+
+USE_NTDLL			= 1

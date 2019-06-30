@@ -1,0 +1,1 @@
+autocheck autochm *.native Hello World
