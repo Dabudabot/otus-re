@@ -125,7 +125,6 @@ puts:
         test al, al
         jnz puts
         popad
-        hlt
         ret
 
 Hello db 'pm_Main', 0
