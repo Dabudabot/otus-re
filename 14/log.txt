@@ -1,0 +1,96 @@
+
+
+-------------------
+-------------------
+Mon Jul 15 01:04:35 2019
+-------------------
+PE Loader initiated
+-------------------
+[INFO Mon Jul 15 01:04:35 2019] File was opened & mapped
+
+[INFO Mon Jul 15 01:04:35 2019] IMAGE_DOS_HEADER - OK
+
+[INFO Mon Jul 15 01:04:35 2019] IMAGE_NT_HEADER - OK
+
+[INFO Mon Jul 15 01:04:35 2019] Image allocated at 0xf50000
+
+[INFO Mon Jul 15 01:04:35 2019] Moving sections...
+
+[INFO Mon Jul 15 01:04:35 2019] Section #00 is .text at 0xf51000
+
+[INFO Mon Jul 15 01:04:35 2019] Section #01 is .idata at 0xf52000
+
+[INFO Mon Jul 15 01:04:35 2019] Section #02 is .reloc at 0xf53000
+
+[INFO Mon Jul 15 01:04:35 2019] Sections ready
+
+[INFO Mon Jul 15 01:04:35 2019] Found dll KERNEL32.DLL
+
+[INFO Mon Jul 15 01:04:39 2019]   Found function ExitProcess at 0x77444f20
+
+[INFO Mon Jul 15 01:05:05 2019]   Found function GetCommandLineA at 0x77442970
+
+[INFO Mon Jul 15 01:05:11 2019] Found dll USER32.DLL
+
+[INFO Mon Jul 15 01:05:11 2019]   Found function MessageBoxA at 0x76991f70
+
+[INFO Mon Jul 15 01:05:21 2019] Imports done
+
+[INFO Mon Jul 15 01:07:08 2019]     Relocating 0xa2068 -> 0xf52068
+
+[INFO Mon Jul 15 01:08:17 2019]     Relocating 0xa2098 -> 0xf52098
+
+[INFO Mon Jul 15 01:08:17 2019]     Relocating 0xa2064 -> 0xf52064
+
+[INFO Mon Jul 15 01:08:17 2019] Relocation done
+
+[INFO Mon Jul 15 01:08:17 2019] Jumping to entry point at 0xf51000
+
+
+
+-------------------
+-------------------
+Mon Jul 15 01:08:59 2019
+-------------------
+PE Loader initiated
+-------------------
+[INFO Mon Jul 15 01:08:59 2019] File was opened & mapped
+
+[INFO Mon Jul 15 01:08:59 2019] IMAGE_DOS_HEADER - OK
+
+[INFO Mon Jul 15 01:08:59 2019] IMAGE_NT_HEADER - OK
+
+[INFO Mon Jul 15 01:08:59 2019] Image allocated at 0x630000
+
+[INFO Mon Jul 15 01:08:59 2019] Moving sections...
+
+[INFO Mon Jul 15 01:08:59 2019] Section #00 is .text at 0x631000
+
+[INFO Mon Jul 15 01:08:59 2019] Section #01 is .idata at 0x632000
+
+[INFO Mon Jul 15 01:08:59 2019] Section #02 is .reloc at 0x633000
+
+[INFO Mon Jul 15 01:08:59 2019] Sections ready
+
+[INFO Mon Jul 15 01:08:59 2019] Found dll KERNEL32.DLL
+
+[INFO Mon Jul 15 01:08:59 2019]   Found function ExitProcess at 0x77444f20
+
+[INFO Mon Jul 15 01:09:02 2019]   Found function GetCommandLineA at 0x77442970
+
+[INFO Mon Jul 15 01:09:02 2019] Found dll USER32.DLL
+
+[INFO Mon Jul 15 01:09:02 2019]   Found function MessageBoxA at 0x76991f70
+
+[INFO Mon Jul 15 01:09:02 2019] Imports done
+
+[INFO Mon Jul 15 01:09:04 2019]     Relocating 0xa2068 -> 0x632068
+
+[INFO Mon Jul 15 01:09:04 2019]     Relocating 0xa2098 -> 0x632098
+
+[INFO Mon Jul 15 01:09:04 2019]     Relocating 0xa2064 -> 0x632064
+
+[INFO Mon Jul 15 01:09:04 2019] Relocation done
+
+[INFO Mon Jul 15 01:09:04 2019] Jumping to entry point at 0x631000
+
