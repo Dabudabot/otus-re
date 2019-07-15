@@ -13,7 +13,7 @@ HRESULT InitLogger(PTCHAR Filename)
 
   time_t t = time(NULL);
   struct tm tm;
-  err = localtime_s(&tm, &t);
+  err = localtime_s(&tm, &t); // pick current time
 
   if (err)
   {
@@ -41,7 +41,7 @@ VOID Log(LOG_TYPE type, PTCHAR format, ...)
 {
   time_t t = time(NULL);
   struct tm tm;
-  errno_t err = localtime_s(&tm, &t);
+  errno_t err = localtime_s(&tm, &t); // pick current time
 
   if (err)
   {
